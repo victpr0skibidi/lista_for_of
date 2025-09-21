@@ -6,6 +6,24 @@
     //Apresente apenas os números pares. Apresente também a quantidade de números pares que existem e apresente a quantidade de elementos da lista original.
 
     //ENTRADA
+    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+    let numeros= [];
+    let nomes= [];
+    for( let nomeOuNumero of listaDeItens){
+       let resposta= prompt(`este item: ${nomeOuNumero} é um nome, ou um numero?`);
+       if( resposta==="Nome"){
+        nomes.push(nomeOuNumero);
+       }if (resposta==="Numero" && nomeOuNumero%2===0) {
+        numeros.push(nomeOuNumero);
+       }
+    }
+    let quantidadeNumeros= numeros.length;
+    let quantidadeListaOriginal= listaDeItens.length;
+     alert(numeros);
+     alert(quantidadeNumeros);
+     alert(quantidadeListaOriginal);
+
+
 
 
     //PROCESSAMENTO
